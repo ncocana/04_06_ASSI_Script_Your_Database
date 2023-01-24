@@ -7,10 +7,10 @@ use rentalBikes;
 -- Create table 'Bikes'.
 create table if not exists Bikes(
     BikeID int not null auto_increment,
-    type varchar(20) null,
-    mark varchar(15) null,
+    type varchar(20),
+    mark varchar(15),
     isElectric boolean not null,
-    capacity varchar(25) null,
+    capacity int,
     price numeric(2,0) check (price>0),
     primary key(BikeID));
 
@@ -18,6 +18,8 @@ create table if not exists Bikes(
 create table if not exists Store(
     StoreID varchar(20) not null,
     name varchar(20) not null,
+    address varchar(50),
+    email varchar(20),
     phone_number int,
     UNIQUE(StoreID),
     primary key(StoreID)
