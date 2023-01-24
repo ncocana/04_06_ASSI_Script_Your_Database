@@ -1,11 +1,11 @@
 -- Creates the database.
-create database rentalBikes;
+create database if not exists rentalBikes;
 
 -- Positionates yourself in the database.
 use rentalBikes;
 
 -- Create table 'Bikes'.
-create table Bikes(
+create table if not exists Bikes(
     BikeID int not null auto_increment,
     type varchar(20) null,
     mark varchar(15) null,
@@ -15,7 +15,7 @@ create table Bikes(
     primary key(BikeID));
 
 -- Create table 'Stores'.
-create table Store(
+create table if not exists Store(
     StoreID varchar(20) not null,
     name varchar(20) not null,
     phone_number int,
@@ -24,13 +24,13 @@ create table Store(
     );
 
 -- Create table 'Stock'.
-create table Stock(
-    BikeID int auto_increment;
+create table if not exists Stock(
+    BikeID int not null auto_increment,
     StoreID varchar(20) not null,
     availability boolean not null,
     stock int not null,
     UNIQUE(StoreID),
     primary key(BikeID, StoreID),
-    foreign key(BikeID) reference Bikes(BikeID),
+    foreign key(BikeID) references Bikes(BikeID),
     foreign key(StoreID) references Store(StoreID)
     );
