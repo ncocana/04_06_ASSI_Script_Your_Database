@@ -1,2 +1,53 @@
-# 04_06_ASSI_Script_Your_Database
-Assignment from Databases about MariaDB's queries.
+# 04.06 ASSI Script Your Database
+
+**Table of contents**
+
+-   [**Introduction**](#introduction)
+-   [**Relational Diagram**](#relational-diagram)
+-   [**Scripts**](#scripts)
+    -   [**ddl.sql**](#ddlsql)
+    -   [**dml.sql**](#dmlsql)
+    -   [**queries.sql**](#queriessql)
+    -   [**delete.sql**](#deletesql)
+    -   [**drop.sql**](#dropsql)
+
+## Introduction
+
+In this assignment, we had to create a serie of scripts to generate the database we did in a relational diagram in an anterior assignment. If possible, using the following keywords:  
+
+```
+IF NOT EXISTS
+PRIMARY KEY
+FOREIGN KEY
+NOT NULL
+CHECK
+UNIQUE KEY
+AUTO_INCREMENT
+```
+
+This assignment was made by [Noa Cocaña](https://github.com/ncocana) and [Samuel Piedra](https://github.com/SPiedra955).  
+
+## Relational Diagram
+
+(imagen)
+
+## Scripts
+
+### ddl.sql
+
+
+
+### dml.sql
+
+
+
+### queries.sql
+
+
+
+### delete.sql
+
+
+
+### drop.sql
+
