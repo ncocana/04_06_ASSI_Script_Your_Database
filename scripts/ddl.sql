@@ -12,11 +12,12 @@ create table if not exists Bikes(
     isElectric boolean not null,
     capacity int,
     price numeric(2,0) check (price>0),
+    UNIQUE(BikeID),
     primary key(BikeID));
 
 -- Create table 'Stores'.
 create table if not exists Store(
-    StoreID varchar(20) not null,
+    StoreID int not null auto_increment,
     name varchar(20) not null,
     address varchar(50),
     email varchar(20),
@@ -27,12 +28,11 @@ create table if not exists Store(
 
 -- Create table 'Stock'.
 create table if not exists Stock(
-    BikeID int not null auto_increment,
-    StoreID varchar(20) not null,
+    BikeID int not null,
+    StoreID int not null,
     availability boolean not null,
     stock int not null,
-    UNIQUE(StoreID),
-    primary key(BikeID, StoreID),
+    constraint stock_pk primary key(BikeID, StoreID),
     foreign key(BikeID) references Bikes(BikeID),
     foreign key(StoreID) references Store(StoreID)
     );
