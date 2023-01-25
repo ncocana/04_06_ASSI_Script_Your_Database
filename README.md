@@ -29,7 +29,7 @@ This assignment was made by [Noa Cocaña](https://github.com/ncocana) and [Samue
 
 ## Relational Diagram
 
-![03_02_ASSI_Relational_Bike drawio](https://user-images.githubusercontent.com/117761602/214666041-6b696f4d-8590-45a9-9809-d39a0e800986.png)
+![03_02_ASSI_Relational_Bike drawio](https://user-images.githubusercontent.com/117761602/214666706-51720dd9-ac81-4ea1-96c3-4e645bd2612e.png)
 
 ## Scripts
 
