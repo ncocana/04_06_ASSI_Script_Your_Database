@@ -35,7 +35,7 @@ This assignment was made by [Noa Cocaña](https://github.com/ncocana) and [Samue
 
 ### ddl.sql
 
-This script creates the database and the type of data.
+This script creates the database and its tables, in which we define what find of data can be inserted in them.
 
 Example:
 
@@ -49,14 +49,14 @@ Example:
 
 ### dml.sql
 
-Once the database is created, in this script we inserted some values.
+Once the database is created, with this script we can insert some data with which we'll proceed later on to make some example queries.
 
 Example:
 
 ![image](https://user-images.githubusercontent.com/114516225/214677617-2afebdcf-d84a-495f-b4a6-330f45fa4f77.png)
 ### queries.sql
 
-This file contains examples of queries for find data, based in our criteria.
+This file contains some examples of queries to get the wanted data from the tables.
 
 Example:
 
@@ -64,7 +64,7 @@ Example:
 
 ### delete.sql
 
-Like his own name describes this script his for delete data from the tables,but this don't delete the table only his records or values.
+Like his own name, describes this script is for deleting data from the tables. However, this doesn't delete the table, only the data in it.
 
 Example:
 
@@ -72,14 +72,14 @@ Example:
 
 ![image](https://user-images.githubusercontent.com/114516225/214677813-3c2212d3-1737-4835-a9e0-4699daf89538.png)
 
-* Checking the table data, as u can see the table 'Bikes' still existing.
+* Checking the table's data, as you can see the table 'Bikes' still exists but without the data previously stored in it.
 
 ![image](https://user-images.githubusercontent.com/114516225/214677883-89cfdded-cce4-45ce-adc5-ef054e997f8a.png)
 
 
 ### drop.sql
 
-In this script the database is erase, but before proceed the foreign keys must be unable.
+In this script, the database's tables are erased completely. Before deleting the tables, we deactivated the foreign keys with the purpose of avoiding errors.
 
 Example:
 
