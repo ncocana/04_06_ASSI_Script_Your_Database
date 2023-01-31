@@ -45,7 +45,7 @@ Example:
 
 * Creating the table 'Stock':
 
-![image](https://user-images.githubusercontent.com/114516225/214678202-edb8351b-dbc3-4fee-b9c1-0df308c13646.png)
+![image](https://user-images.githubusercontent.com/117761602/215857575-7d047c9e-555e-438a-bb75-bcda224f9aaa.png)
 
 ### dml.sql
 
